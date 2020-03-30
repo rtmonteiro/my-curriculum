@@ -1,0 +1,34 @@
+@import '../../styles.scss';
+
+section {
+  margin: 20px auto;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  & .icon {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    padding: 25px;
+    border-radius: 50%;
+    background-color: $primary-color;
+    
+    display: grid;
+    place-content: center;
+    
+    & fa-icon {
+      color: white;
+      font-size: 1.8em;
+    }
+  }
+
+  & h3 {
+    color: $primary-color;
+    font-size: 1.5em;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+  }
+}
