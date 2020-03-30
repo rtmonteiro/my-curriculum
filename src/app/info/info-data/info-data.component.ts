@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { IInfo } from '../../interfaces/info';
 
 @Component({
   selector: 'app-info-data',
@@ -7,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InfoDataComponent implements OnInit {
 
+  @Input() info_data: IInfo;
+  
   constructor() { }
 
   ngOnInit(): void {

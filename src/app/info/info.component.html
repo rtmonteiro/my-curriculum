@@ -1,10 +1,12 @@
-<div class="container">
+<section class="container">
   <div class="header">
     <h1>Ryan Monteiro</h1>
     <h2>Estudante de Ciência da Computação</h2>
   </div>
   <img class="photo" src="{{ img_url }}" alt="perfil photo">
   <div class="info-data">
-    <app-info-data *ngFor="let item of items"></app-info-data>
+    <div class="data" *ngFor="let item of items">
+      <app-info-data [info_data]='item'></app-info-data>
+    </div>
   </div>
-</div>
+</section>
