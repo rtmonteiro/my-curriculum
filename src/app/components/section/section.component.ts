@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { faCrosshairs } from '@fortawesome/free-solid-svg-icons';
 
 
@@ -10,6 +10,7 @@ import { faCrosshairs } from '@fortawesome/free-solid-svg-icons';
 export class SectionComponent implements OnInit {
 
   faCoffe = faCrosshairs;
+  @Input() title: string;
 
   constructor() { }
 
