@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { faMapMarkerAlt, faPhone, faBirthdayCake, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedinIn, faGithubAlt } from '@fortawesome/free-brands-svg-icons';
-import { IInfo } from '../interfaces/info';
+import { IInfo } from '../../interfaces/info';
 
 
 @Component({
@@ -37,7 +37,7 @@ export class InfoComponent implements OnInit {
     {
       icon: faBirthdayCake,
       data: '24/09/1998',
-      link: '#'
+      link: ''
     },
     {
       icon: faEnvelope,

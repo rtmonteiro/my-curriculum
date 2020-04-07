@@ -1,0 +1,16 @@
+.container {
+  display: grid;
+  grid-template-columns: 50px auto;
+}
+
+svg {
+  width: 50px;
+  height: 150px;
+  position: relative;
+  top: -20px;
+}
+
+path {
+  stroke: grey;
+  stroke-width: 3;
+}

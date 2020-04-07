@@ -4,10 +4,10 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
-import { InfoComponent } from './info/info.component';
-import { InfoDataComponent } from './info/info-data/info-data.component';
-import { SectionComponent } from './section/section.component';
-import { GoalComponent } from './goal/goal.component';
+import { InfoComponent } from './components/info/info.component';
+import { InfoDataComponent } from './components/info/info-data/info-data.component';
+import { SectionComponent } from './components/section/section.component';
+import { GoalComponent } from './components/goal/goal.component';
 
 @NgModule({
   declarations: [
