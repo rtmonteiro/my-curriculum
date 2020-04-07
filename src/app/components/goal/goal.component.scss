@@ -3,6 +3,10 @@
   grid-template-columns: 50px auto;
 }
 
+app-section {
+  grid-column: 1 / 2;
+}
+
 svg {
   width: 50px;
   height: 150px;

@@ -1,4 +1,5 @@
-import { Component, OnInit, Directive, ElementRef } from '@angular/core';
+import { Component, OnInit, ElementRef } from '@angular/core';
+import { faCrosshairs } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-goal',
@@ -8,6 +9,7 @@ import { Component, OnInit, Directive, ElementRef } from '@angular/core';
 export class GoalComponent implements OnInit {
 
   head_title = 'Objetivos Profissionais';
+  head_icon = faCrosshairs;
 
   constructor(private el:ElementRef){}
 
