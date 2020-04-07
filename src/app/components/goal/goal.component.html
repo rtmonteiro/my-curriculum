@@ -1,13 +1,7 @@
 <div class="container">
   <app-section [title]='head_title' [icon]='head_icon'></app-section>
-  <svg >
-    <path d="M25 0 l0 150 Z"/>
+  <svg>
+    <path d="M25 -25 v150"/>
   </svg>
-  <p (click)="show()">
-    Almejo a vaga de estágio de Desenvolvedor e através deste cargo, me desafiar em novas atividades que envolvam o
-    aprendizado de novas frameworks, que utilizem a computação na nuvem, onde haja a aplicação de métodos ágeis de
-    gerenciamento de equipes e eficiência (Scrum, GTD), e que exija a busca por inovação e agilidade para a solução de
-    problemas. Eu realmente procuro iniciar a minha vida profissional dentro de uma empresa que me desafie e que eu posso de
-    alguma forma contribuir para o avanço dela.
-  </p>
+  <p (click)="show()" id="goal_text">{{ goal_text }}</p>
 </div>

@@ -1,20 +1,28 @@
 .container {
   display: grid;
   grid-template-columns: 50px auto;
+  grid-template-areas: 
+    "head head"
+    "svg p";
 }
 
 app-section {
-  grid-column: 1 / 2;
+  grid-area: head;
+  z-index: 2;
 }
 
 svg {
   width: 50px;
-  height: 150px;
-  position: relative;
-  top: -20px;
+  height: auto;
+  grid-area: svg;
+  overflow: visible;
 }
 
 path {
   stroke: grey;
   stroke-width: 3;
+}
+
+#goal_text {
+  grid-area: p;
 }
