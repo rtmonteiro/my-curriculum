@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { faCrosshairs } from '@fortawesome/free-solid-svg-icons';
+import { faBriefcase } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-experiences',
@@ -9,7 +9,7 @@ import { faCrosshairs } from '@fortawesome/free-solid-svg-icons';
 export class ExperiencesComponent implements OnInit {
   
   head_title = 'Experiências';
-  head_icon = faCrosshairs;
+  head_icon = faBriefcase;
   
   constructor() { }
 
