@@ -3,5 +3,9 @@
   <svg>
     <path d="M25 -25 v150"/>
   </svg>
-  <p id="goal_text">{{ goal_text }}</p>
+  <div class="experiences">
+    <div class="exp-unit" *ngFor='let id of [1, 2, 3, 4]'>
+      <app-exp-unit></app-exp-unit>
+    </div>
+  </div>
 </div>
