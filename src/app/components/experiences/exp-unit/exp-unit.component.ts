@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { IExperience } from 'src/app/interfaces/experience';
 
 @Component({
@@ -8,16 +8,8 @@ import { IExperience } from 'src/app/interfaces/experience';
 })
 export class ExpUnitComponent implements OnInit {
 
-  exp_info:IExperience = {
-    name: 'Estagiário em Desenvolvimento de Software',
-    local: 'na 2Solve Engenharia e Tecnologia Ltda.',
-    responsabilities: [
-      'Criar interfaces de aplicações em Mockups e testar interações com Softwares de Prototipagem (Adobe XD, Figma).',
-      'Atualizar interfaces de projetos antigos para tornar mais responsivo.',
-      'Preparar manuais básicos de programação para a gestão de conhecimento dos projetos, no Evernote.'
-    ]
-  };
-
+  @Input() exp_info: IExperience;
+  
   constructor() { }
 
   ngOnInit(): void {

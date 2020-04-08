@@ -4,8 +4,8 @@
     <path d="M25 -25 v150"/>
   </svg>
   <div class="experiences">
-    <div class="exp-unit" *ngFor='let id of [1, 2, 3, 4]'>
-      <app-exp-unit></app-exp-unit>
+    <div class="exp-unit" *ngFor='let exp of exps'>
+      <app-exp-unit [exp_info]='exp'></app-exp-unit>
     </div>
   </div>
 </div>
