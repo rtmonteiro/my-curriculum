@@ -1,0 +1,11 @@
+<div class="container">
+  <app-section [title]='head_title' [icon]='head_icon'></app-section>
+  <svg>
+    <path d="M25 -25 v150"/>
+  </svg>
+  <div class="experiences">
+    <div class="exp-unit" *ngFor='let exp of exps'>
+      <app-exp-unit [exp_info]='exp'></app-exp-unit>
+    </div>
+  </div>
+</div>

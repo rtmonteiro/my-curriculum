@@ -1,0 +1,33 @@
+.container {
+  display: grid;
+  grid-template-columns: 50px auto;
+  grid-template-areas: 
+    "head head"
+    "svg exp";
+}
+
+app-section {
+  grid-area: head;
+  z-index: 2;
+}
+
+svg {
+  width: 50px;
+  height: auto;
+  z-index: 0;
+  grid-area: svg;
+  overflow: visible;
+}
+
+path {
+  stroke: grey;
+  stroke-width: 3;
+}
+
+.experiences {
+  grid-area: exp;
+}
+
+.exp-unit {
+  margin-bottom: 20px;
+}

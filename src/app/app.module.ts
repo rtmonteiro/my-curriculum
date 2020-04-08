@@ -8,6 +8,8 @@ import { InfoComponent } from './components/info/info.component';
 import { InfoDataComponent } from './components/info/info-data/info-data.component';
 import { SectionComponent } from './components/section/section.component';
 import { GoalComponent } from './components/goal/goal.component';
+import { ExperiencesComponent } from './components/experiences/experiences.component';
+import { ExpUnitComponent } from './components/experiences/exp-unit/exp-unit.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { GoalComponent } from './components/goal/goal.component';
     InfoComponent,
     InfoDataComponent,
     SectionComponent,
-    GoalComponent
+    GoalComponent,
+    ExperiencesComponent,
+    ExpUnitComponent
   ],
   imports: [
     BrowserModule,
