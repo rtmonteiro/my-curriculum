@@ -10,6 +10,8 @@ import { SectionComponent } from './components/section/section.component';
 import { GoalComponent } from './components/goal/goal.component';
 import { ExperiencesComponent } from './components/experiences/experiences.component';
 import { ExpUnitComponent } from './components/experiences/exp-unit/exp-unit.component';
+import { EducationComponent } from './components/education/education.component';
+import { EduUnitComponent } from './components/education/edu-unit/edu-unit.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { ExpUnitComponent } from './components/experiences/exp-unit/exp-unit.com
     SectionComponent,
     GoalComponent,
     ExperiencesComponent,
-    ExpUnitComponent
+    ExpUnitComponent,
+    EducationComponent,
+    EduUnitComponent
   ],
   imports: [
     BrowserModule,
