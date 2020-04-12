@@ -3,4 +3,9 @@
   <svg>
     <path d="M25 -25 v150"/>
   </svg>
+  <div class="content">
+    <div class="edu-data" *ngFor='let item of items'>
+      <app-edu-unit [edu_info]='item'></app-edu-unit>
+    </div>
+  </div>
 </div>

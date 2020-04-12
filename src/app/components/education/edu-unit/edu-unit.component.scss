@@ -1,0 +1,19 @@
+@import '../../../../variables.scss';
+
+.container {
+  & h4 {
+    font: $bolder-weight 1em $primary-font;
+    margin-bottom: 5px;
+    & .badge {
+      padding: 5px;
+      border-radius: 5px;
+      background-color: $primary-color;
+      font: $black-weight 0.8em $primary-font;
+      color: white;
+      white-space: nowrap;
+    }
+  }
+  & h5 {
+    font: $italic-weight 0.9em $primary-font;
+  }
+}

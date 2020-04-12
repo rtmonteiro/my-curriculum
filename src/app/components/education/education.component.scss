@@ -1,9 +1,11 @@
+@import '../../../variables.scss';
+
 .container {
   display: grid;
   grid-template-columns: 50px auto;
   grid-template-areas: 
     "head head"
-    "svg .";
+    "svg content";
 }
 
 app-section {
@@ -21,4 +23,11 @@ svg {
 path {
   stroke: grey;
   stroke-width: 3;
+}
+
+.content {
+  grid-area: content;
+  & .edu-data {
+    margin-bottom: 10px;
+  }
 }

@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { IEducation } from 'src/app/interfaces/education';
 
 @Component({
   selector: 'app-edu-unit',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./edu-unit.component.scss']
 })
 export class EduUnitComponent implements OnInit {
+
+  @Input() edu_info: IEducation;
 
   constructor() { }
 
