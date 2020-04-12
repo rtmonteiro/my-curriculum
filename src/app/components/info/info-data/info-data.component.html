@@ -2,5 +2,10 @@
   <div class="icon">
     <fa-icon [icon]=info_data.icon></fa-icon>
   </div>
-  <a href="{{ info_data.link }}" target="_blank">{{ info_data.data }}</a>
+  <ng-container *ngIf="info_data?.link as url; else noUrl">
+    <a href="{{ url }}" target="_blank">{{ info_data.data }}</a>
+  </ng-container>
+  <ng-template #noUrl>
+    <p>{{ info_data.data }}</p>
+  </ng-template>
 </div>
