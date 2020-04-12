@@ -1,14 +1,11 @@
 @import '../../../../variables.scss';
 
 .name {
-  font-size: 1.2em;
-  font-weight: bold;
+  font: $bolder-weight 1.2em $primary-font;
 }
 
 .local {
-  font-size: 0.9em;
-  font-weight: 300;
-  font-style: italic;
+  font: $italic-weight 0.9em $primary-font;
 }
 
 .responsabilities {
@@ -16,7 +13,6 @@
 }
 
 ul {
-  margin-left: 10px;
   
   & li {
     line-height: 1.5em;
